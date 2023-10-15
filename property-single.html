@@ -1,0 +1,347 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="description" content="" />
+	<meta name="keywords" content="bootstrap, bootstrap5" />
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+	<link rel="icon" href="https://partnersadvisers.cl/wp-content/uploads/2021/06/cropped-Logotipo-PA_Asesoria_financiera-1-32x32.png" sizes="32x32">
+
+
+	<link rel="stylesheet" href="fonts/icomoon/style.css">
+	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+	<link rel="stylesheet" href="css/tiny-slider.css">
+	<link rel="stylesheet" href="css/aos.css">
+	<link rel="stylesheet" href="css/style.css">
+	
+	<script src="https://kit.fontawesome.com/5694cf4c5b.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+
+	<link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+
+	<link href="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css" rel="stylesheet">
+	<script src="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.js"></script>
+
+	<title>Partner & Advisers</title>
+	</head>
+<body>
+
+	<div class="site-mobile-menu site-navbar-target">
+		<div class="site-mobile-menu-header">
+			<div class="site-mobile-menu-close">
+				<span class="icofont-close js-menu-toggle"></span>
+			</div>
+		</div>
+		<div class="site-mobile-menu-body"></div>
+	</div>
+<!-----------------------------------Navegador---------------------------------------->
+<nav class="site-nav " style="box-shadow:0px 10px 13px -7px #55555b, 5px 5px 15px 5px rgba(0,0,0,0);">
+	<div class="container ">
+		<div class="menu-bg-wrap">
+			<div class="site-navigation">
+				<a href="index.html" class="logo m-0 float-start text-black" style="font-size: 50px; color: black;"><img src="https://papropiedades.cl/wp-content/uploads/2022/09/Variante-PA_Gestio%CC%81n-inmobiliaria-1.png" class="logo-emp"></a>
+				<ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end" style="margin-top: 15px;">	
+					<li class=""><a href="index.html">PROPIEDADES</a></li>		
+				</ul>
+
+				<a href="#" class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none" data-toggle="collapse" data-target="#main-navbar">
+					<span></span>
+				</a>
+
+			</div>
+		</div>
+	</div>
+</nav>
+
+<!---------------------------------descripcion propiedad------------------------------>
+
+<div class="section" style="padding-bottom: 0px; margin-top: 150px;">
+		<div class="container">
+			<div class="row align-items-center p-3"  style="margin-right: 5%;">
+				<div class="col-lg-8  ">
+					<div class="row ">
+						<div class="col-12 bord-venta m-lg-4" id="main-info-prop">
+							<h1 class="heading " style="font-weight: bold; color: #4D4D4D;">Buscando propiedad...</h1>
+					
+						</div>
+					</div>
+
+				</div>
+				<div class="col-lg-4  p-1">
+					<div class="row" id="price-info-prop">
+						<div class="col-12" style="display: flex;justify-content: right;">
+							<b>
+								<h1 class="heading " style="font-weight: bold; color: #4D4D4D;">UF 0</h1>
+							</b>
+						</div>
+						<div class="col-12" style="display: flex;justify-content: right;">
+							<h5 class="heading" style="color:#ffb649"> CLP   $0</h5>
+						</div>
+					</div>
+
+				</div>
+		
+			</div>
+
+
+			<div class="row" style="padding-left: 3%;padding-right: 5%; margin-bottom: 90px;" >
+				<div class="col-lg-12 col-sm-12 " style=" box-shadow: 20px 20px 80px 0px rgba(0, 0, 0, 0.5)">
+					<div class="row " style="overflow:hidden ;" id="carousel-img-prop">
+					</div>
+					<div class="row text-center  mb-2 mt-2" id="format-carousel-prop">
+
+					</div>
+				</div>
+			</div>
+						<!-- Modal -->
+			<div class="modal fade" id="modalImgCarrousel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered modal-fullscreen">
+							<div class="modal-content">
+								<div class="modal-body">
+									<div class="row mb-2">
+										<div class="col-lg-12 col-sm-12 d-flex justify-content-end">
+											<button type="button" class="btn-close" data-bs-dismiss="modal"
+												aria-label="Close"></button>
+										</div>
+									</div>
+									<div class="row " style="overflow:hidden;" id="modal-carroucel-img">
+		
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row mb-1">
+						<div class="col-lg-4 ps-5" >
+							<h2 class="font-weight-bold  heading">DESCRIPCIÓN</h2> 
+			
+						</div>
+						<div class="col-lg-8 ">
+							<hr width="90%" size="5"  style="color: #ffb649"></hr>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-12 col-xl-8 ps-5" id="description-info-prop" >
+							<p>Buscando propiedad...</p>
+							<h5>Caracteristicas generales</h5>
+							<p>Buscando propiedad...</p>
+						</div>
+						<div class="col-12 col-xl-4">
+							<div class="row" style="height: 100%;">
+								<div class="col-12 col-xl-8" id="caract-prop">
+
+								</div>
+				
+							</div>
+						</div>
+					</div>
+		</div>
+	</div>
+<!---------------------------MAPA----------------------------->
+<div class="section "style="">
+	<div class="container">
+		<div class="row  mb-1">
+			<div class="col-lg-4" style="padding-left: 150px;">
+				<h2 class="font-weight-bold  heading">MAPA</h2> 
+
+			</div>
+			<div class="col-lg-8 ">
+				<hr width="90%" size="5" style="color: #ffb649" ></hr>
+			</div>
+		</div>
+		
+		<div id="map"></div> 
+	</div>
+</div>
+
+
+
+<!--------------------------------contato corredor----------------------->
+<section>
+	<div class="container">
+		<div class="row m-sm-5 p-sm-3 " style=" box-shadow:  0px 10px 13px -7px #000000, 0px -10px 13px -7px #000000;">
+			<div class="col-12 col-xl-5 p-3 " >
+				<div class="row">
+					<div class="col-12 col-md-12 ">
+						<div class="row">
+							<div id="realtorImage" class="col-12 ">
+								<div class="img text-center">
+									<img src="https://papropiedades.cl/wp-content/uploads/2022/09/Variante-PA_Gestio%CC%81n-inmobiliaria-1.png" alt="Image" class="img-fluid"
+									style="width: 90%; max-width: 380px; ">
+								</div>
+							</div>
+							<div id="realtorName" class="col-12 text-center " style="padding-top: 8%;">
+								<p style="font-size: 26px;"><b>Buscando...</b></p>
+							</div>
+						</div>
+
+					</div>
+					<div class="col-12 col-md-12   " style="padding-top: 5%;padding-right: 10%;padding-left: 10%;">
+						<div class="row " >
+
+							<div class="col-12">
+
+							</div>
+
+							<div class="col-12">
+								<p id="realtorEmail" style="font-size: 20px ;font-weight: bold;">
+									<i class="fa fa-envelope-open "aria-hidden="true"></i>
+									Buscando...
+								</p>
+							</div>
+
+							<div class="col-12">
+								<p id="realtorPhone" style="font-size: 20px; font-weight: bold;">
+									<i class="fa fa-whatsapp" aria-hidden="true"></i>
+									Buscando...
+								</p>
+							</div>
+	
+							<div class="col-12 text-center " style="padding: 20px; font-size: 80%;">
+								<button style="border-radius: 50px;width: 70%;padding: 5px;background-color: #333; color: white;">
+									Contactar por whatsapp
+								</button>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12 col-xl-7 p-3  ">
+				<form method="POST" id="form-realtor" name="FormSubmit" class="">
+					<h3 class="mt-3 " style="padding-left: 40px;" > Contáctar al corredor </h3>
+					<div class="row  m-lg-4">
+						<div class="col-12 mb-2 ">
+							<input id="nameDetail" type="text" class="form-control  " style="border-radius: 20px ;font-size: 15px;height: 20px; padding: 20px; border: 1px solid black;" placeholder="Nombre ">
+						</div>
+
+						<div class="col-12 mb-2 ">
+							<input id="phoneDetail" type="text" class="form-control " style="border-radius: 20px ;font-size: 15px;height: 20px; padding: 20px;  border: 1px solid black;" placeholder="Telefono">
+						</div>
+						<div class="col-12 mb-2 ">
+							<input id="emailDetail" type="text" class="form-control " style="border-radius: 20px ;font-size: 15px;height: 20px; padding: 20px; border: 1px solid black;" placeholder="Email">
+						</div>
+						<div class="col-12 mb-2 ">
+							<textarea id="messageDetail" cols="30" rows="7" class="form-control " style="border-radius: 20px ;font-size: 15px;height: 20px; height: 100px !important; padding: 20px; border: 1px solid black; " placeholder="Mensaje"></textarea>
+						</div>
+
+
+						<div class="col-12  " style="padding: 20px; font-size: 80%;">
+							<input type="submit" value="Enviar" class="" style="border-radius: 20px;width: 100%;padding: 5px;background-color: #333; color: white;">
+						</div>
+						<div class="alert visually-hidden" role="alert" id="respuesta"></div>
+
+					</div>
+				</form>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<!--------------------------------footer--------------------------------------->
+
+<div class="site-footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-5">
+				<div class="row">
+					<div class="col-12">
+						<div class="">
+							<a href="https://papropiedades.cl/" target="_blank"><img src="https://papropiedades.cl/wp-content/uploads/2020/09/Logotipo-PA_Gestio%CC%81n-inmobiliaria_Negativo-1536x1038.png" class="img-footer"></a>
+
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="widget">
+							<ul class="list-unstyled social" id="redes-contact">
+			
+							</ul>
+						</div> <!-- /.widget -->
+					</div>
+				</div>
+			</div>
+			<div class="col-7">
+				<div class="row">
+					<div class="col-12 pt-3">
+						<div class="row">
+							<h3 class="p-1 text-white">Contáctanos</h3>
+							<div class="row" >
+								<div class="col-12" id="footer-address">
+								
+								</div>
+								<div class="col-12" id="footer-phone">
+								
+								</div>
+								<div class="col-12" id="footer-email">
+								
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class="col-lg-12">
+
+			</div> <!-- /.col-lg-4 -->
+		</div> <!-- /.row -->
+		<hr width="100%" size="5"  style="color: #ffb649"></hr>
+		<div class="row mt-5">
+			<div class="col-12 text-center">
+
+				<p> &copy;<script>;</script> TODOS LOS DERECHOS RESERVADOS.  
+				</p>
+
+	  		</div>
+		</div>
+  </div> <!-- /.container -->
+</div> <!-- /.site-footer -->
+
+
+    <!-- Preloader -->
+    <div id="overlayer"></div>
+    <div class="loader">
+    	<div class="spinner-border" role="status">
+    		<span class="visually-hidden">Loading...</span>
+    	</div>
+    </div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/custom.js"></script>
+
+
+		<!-- Axios -->
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+		<!-- Splide -->
+		<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+		<!-- Utils -->
+		<script type="module" src="js/pages/prop_detalle.js"></script>
+
+		<!-- Forms -->
+		<script type="module" src="js/Forms/SendEmailDetail.js"></script>
+		<script type="module" src="js/Forms/PostContactDetail.js"></script>
+		<script type="module" src="js/Data/ContactInfo.js"></script>
+		
+  </body>
+  </html>

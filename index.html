@@ -1,0 +1,365 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="description" content="" />
+	<meta name="keywords" content="bootstrap, bootstrap5" />
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="icon" href="https://partnersadvisers.cl/wp-content/uploads/2021/06/cropped-Logotipo-PA_Asesoria_financiera-1-32x32.png" sizes="32x32">
+
+
+
+	<link rel="stylesheet" href="fonts/icomoon/style.css">
+	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+	<link rel="stylesheet" href="css/tiny-slider.css">
+	<link rel="stylesheet" href="css/aos.css">
+	<link rel="stylesheet" href="css/style.css">
+	
+	<script src="https://kit.fontawesome.com/5694cf4c5b.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+	<link href="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css" rel="stylesheet">
+	<script src="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.js"></script>
+
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+	<title>Partner & Advisers</title>
+	</head>
+<body>
+
+	<div class="site-mobile-menu site-navbar-target">
+		<div class="site-mobile-menu-header">
+			<div class="site-mobile-menu-close">
+				<span class="icofont-close js-menu-toggle"></span>
+			</div>
+		</div>
+		<div class="site-mobile-menu-body"></div>
+	</div>
+
+<!-----------------------------------Navegador---------------------------------------->
+
+<nav class="site-nav ">
+	<div class="container ">
+		<div class="menu-bg-wrap">
+			<div class="site-navigation">
+				<a href="https://papropiedades.cl" target="_blank" class="logo m-0 float-start text-black" style="font-size: 50px; color: black; "><img src="https://papropiedades.cl/wp-content/uploads/2022/09/Variante-PA_Gestio%CC%81n-inmobiliaria-1.png" class="logo-emp"></a>
+
+
+			</div>
+		</div>
+	</div>
+</nav>
+
+
+<!-------------------------------Slider Img    +   Filtro ---------------------------------------------------------->	
+<div class="hero " style="background-image:url(images/interiores5.jpg) ;">
+	<div class="container">
+		<div class="row justify-content-center align-items-center">
+			<div class="col-lg-12  ">
+				<div id="searchFormAdvanced" class="narrow-w form-search d-flex align-items-stretch mb-3 formfilter" data-aos="fade-up" data-aos-delay="200">
+					<div class="row p-3 pt-5 cuadro-bl mt-4">
+						<h3 style="font-weight: bold;">Búsqueda avanzada</h3>
+						<div class="row">
+							<div class="col-12">
+								<div class="row  mb-4" id="operationTypeRadio">
+									<div class="col-4">
+										<input class="form-check-input" style="border: 1px solid black;" type="radio" name="flexRadioDefault" id="flexRadioDefault2"  id="operationType-arriendo" value="arriendo">
+										<label class="form-check-label" for="flexRadioDefault2">
+										Arriendo
+										</label>
+									</div>
+									<div class="col-5">
+										<input class="form-check-input" style="border: 1px solid black;" type="radio" name="flexRadioDefault" id="flexRadioDefault3"  id="operationType-arriendo-temp" value="arriendo_temporal">
+										<label class="form-check-label" for="flexRadioDefault3">
+										Arriendo temporal
+										</label>
+									</div>
+									<div class="col-3">
+										<input class="form-check-input " style="border: 1px solid black;" type="radio" name="flexRadioDefault" id="flexRadioDefault1" id="operationType-venta" value="venta">
+										<label class="form-check-label " for="flexRadioDefault1">
+										Venta
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-12 text-center p-1">
+							<select id="typeOfProperty" class="form-select" style="border-radius: 15px;" aria-label="Default select example">
+								<option value="" selected>Tipo inmueble</option>
+								<option value="1">Casa</option>
+								<option value="2">Terreno</option>
+								<option value="3">Departamento</option>
+							</select>
+						</div>
+						<div class="col-lg-12 text-center p-1">
+							<select id="regionTextId" class="form-select" style="border-radius: 15px;" aria-label="Default select example">
+								<option value="0" selected>Región</option>
+							</select>
+						</div>
+						<div class="col-lg-6 text-center p-1">
+							<select id="communeTextId" class="form-select" style="border-radius: 15px;" aria-label="Default select example">
+								<option value="" selected>Comuna</option>	
+							</select>
+						</div>
+			
+
+						<div class="col-lg-6 text-center p-1">
+							<select id="bedrooms" class="form-select" style="border-radius: 15px;" aria-label="Default select example">
+								<option value="" selected>Habitaciones</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+							</select>
+						</div>
+						<div class="col-lg-6 text-center p-1">
+							<select id="bathrooms" class="form-select" style="border-radius: 15px;" aria-label="Default select example">
+								<option value="" selected>Baños</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+							</select>
+						</div>
+						<div class="col-lg-6 text-center p-1">
+							<select id="covered_parking_lots" class="form-select" style="border-radius: 15px;" aria-label="Default select example">
+								<option value="" selected>Estacionamientos</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+							</select>
+						</div>
+						<!--Precio------------------------------------------->
+						<div class="row">
+							<div class="col-lg-12 p-1  ">
+								<div class="row ">
+									<div class="col-lg-6 col-sm-12 " style="font-size: 15px;">
+										<label for="" class="p-2" style="color: #000000;" >PRECIO: </label>
+										<div class="form-check form-check-inline ">
+											<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="UF">
+											<label class="form-check-label" for="inlineRadio1">UF</label>
+										</div>
+										<div class="form-check form-check-inline ">
+											<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="CLP">
+											<label class="form-check-label" for="inlineRadio2">CLP</label>
+										</div>
+									</div>
+									<div class="col-lg-6 col-sm-12 ">
+										<div class="row">
+											<div class="col-lg-6 col-sm-6 p-1">
+												<input type="number" class="text-center" style="width: 100%; border-radius: 12px; " min="0" pattern="^[0-9]+" name="desde" id="min_price" placeholder="Desde">
+			
+											</div>
+											<div class="col-lg-6 col-sm-6  p-1">
+												<input type="number" class="text-center" style="width: 100%; border-radius: 12px; " min="0" pattern="^[0-9]+" name="hasta" id="max_price" placeholder="Hasta">
+			
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-12 p-1 text-center">
+								<button id="buscar2" type="submit" class="btn btn-primary" style="width: 100%;padding-top: 7px;padding-bottom: 7px;margin-top: 20px;">Buscar</button>
+							</div>
+						</div>
+				
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!------------------------------Propiedades--------------------------------------------->	
+<div class="section" style="margin-bottom: 100px; ">
+	<div class="container" >
+		<div class="row mb-5 align-items-center">
+			<div class="col-lg-4">
+				<h2 class="font-weight-bold text-primary heading" style="font-weight: bold;padding-left:1.5rem ;">PROPIEDADES </h2> 
+
+			</div>
+			<div class="col-lg-8 ">
+				<hr width="100%" size="5"  style="color: #ffb649"></hr>
+			</div>
+		</div>
+		<div class="row align-items-center py-1 text-start  " style="padding-left: 1.5rem;padding-bottom: 50px!important;">
+			<div class="col-lg-3 " style="padding-top: 10px ;padding-left: 0;" id="total-prop">
+				Buscando Propiedades...
+			</div>
+			<div class="col-lg-4" style="padding-top: 10px ;padding-bottom: 7px;">
+				<div class="row text-end" style="padding-top: 10px; padding-right: 10px; padding-left: 10px; align-items: center;">
+					<div class="col-8 col-lg-7 text-end">
+						<select id="FilterPrice" class="form-select text-center" aria-label="Default select example" style="width: 100%!important;">
+							<option disabled selected>Ordenar por:</option>
+							<option value="MenorMayor">Precio menor a mayor</option>
+							<option value="MayorMenor">Precio mayor a menor</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 " style="padding-top: 10px ;padding-left: 0;" id="total-prop">
+				<div class="row text-end" style="padding-top: 10px; padding-right: 10px; padding-left: 10px; align-items: center;">
+					<div class="col-lg-3 text-start">Ver:</div>
+					<div class="col-8 col-lg- text-center">
+						<select id="FilterLimit" class="form-select text-center" aria-label="Default select example" style="width: 100%!important;">
+							<option value="3">3 Propiedades</option>
+							<option value="6">6 Propiedades</option>
+							<option value="9">9 Propiedades</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-2 grilla-custom" style="padding-top: 10px ;">
+	
+				<ul class="nav nav-pills custom-pagination" id="pills-tab" role="tablist" style="justify-content: end; gap: 5px;">
+					<li class="nav-item" role="presentation">
+						<a class=" active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i class='bx bx-grid-alt i-iconos'></i></a>
+					</li>
+					<li class="nav-item" role="presentation">
+						<a class="" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false"><i class='bx bx-map  i-iconos'></i></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		
+
+
+		<div class="tab-content" id="pills-tabContent">
+			<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+				<div class="row " id="container-propiedad" style="justify-content: center;">
+					Buscando
+				</div>
+
+			</div>
+
+			<div class="tab-pane fade initialMap active" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+
+				<div class="row " id="div-map-section">
+					<div id="map"></div> 
+				</div>
+
+				<div class="row " style="padding-left: 5%;padding-right: 5%; padding-top: 30px;">
+					<div class="col-12">
+						<section class="splide" aria-label="Splide Basic HTML Example">
+							<div class="splide__track">
+								<ul class="splide__list" id="container-prop-slide">
+		
+								</ul>
+							</div>
+						</section>
+					</div>
+		
+				</div>
+			</div>
+		</div>
+		<div id="pagination-col" class="row align-items-center py-5">
+			
+		</div>
+	</div>
+</div>
+<!--------------------------------footer--------------------------------------->
+<div class="site-footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-5">
+				<div class="row">
+					<div class="col-12">
+						<div class="">
+							<a href="https://papropiedades.cl/" target="_blank"><img src="https://papropiedades.cl/wp-content/uploads/2020/09/Logotipo-PA_Gestio%CC%81n-inmobiliaria_Negativo-1536x1038.png" class="img-footer"></a>
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="widget">
+							<ul class="list-unstyled social " id="redes-contact">
+								
+		
+							</ul>
+						</div> 
+					</div>
+				</div>
+			</div>
+			<div class="col-7">
+				<div class="row">
+					<div class="col-12 pt-3">
+						<div class="row">
+							<h3 class="p-1 text-white">Contáctanos</h3>
+							<div class="row" >
+								<div class="col-12" id="footer-address">
+								
+								</div>
+								<div class="col-12" id="footer-phone">
+								
+								</div>
+								<div class="col-12" id="footer-email">
+								
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class="col-lg-12">
+
+			</div>
+		</div> 
+		<hr width="100%" size="5"  style="color: #ffb649"></hr>
+		<div class="row mt-5">
+			<div class="col-12 text-center">
+
+				<p> &copy;<script>;</script> TODOS LOS DERECHOS RESERVADOS.  
+				</p>
+
+	  		</div>
+		</div>
+  </div> 
+</div> 
+    <!-- Preloader -->
+    <div id="overlayer"></div>
+    <div class="loader">
+    	<div class="spinner-border" role="status">
+    		<span class="visually-hidden">Loading...</span>
+    	</div>
+    </div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/tabs.js"></script>
+
+	<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+		<!-- Splide -->
+		<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+		<!-- Axios -->
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+		<!-- Page -->
+		<script type="module" src="js/pages/index.js"></script>
+		<!-- Utils -->
+		<script type="module" src="js/utils/getSelects.js"></script>
+		<script type="module" src="js/utils/filterOnSearch.js"></script>
+		<script type="module" src="js/utils/limitProp.js"></script>
+		<script type="module" src="js/Data/RedesContact.js"></script>
+
+		<script type="module" src="js/Data/ContactInfo.js"></script>
+
+  </body>
+  </html>
