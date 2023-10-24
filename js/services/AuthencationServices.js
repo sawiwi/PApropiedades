@@ -1,5 +1,5 @@
 const api = axios.create({
-    baseURL: 'https://aulen.partnersadvisers.info/',
+    baseURL: 'https://pages-api.panal.house/',
   });
   
   export default api;

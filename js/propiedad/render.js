@@ -26,7 +26,7 @@ function changeUrlImage(data) {
 
 function validateImage(image){
   const validTag=['.jpg','.png','.jpeg','.JPG','.avif','.JPEG' ];
-  // console.log(image)
+  console.log(image)
   if(image){
     if(validTag.some(ext => image.endsWith(ext))){
       return `<img src=${image} alt="Image" class="imgProp">`;
