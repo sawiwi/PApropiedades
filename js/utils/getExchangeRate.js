@@ -10,6 +10,10 @@ export const parseToCLPCurrency = (number) => {
 
 /** Parse CLP to UF */
 export const clpToUf = (clpValue, ufValue) => {
+	if(ufValue === 0 ){
+		return clpValue;
+
+	}
 	return (Math.round((clpValue / ufValue) * 100) / 100000).toFixed(2);
 };
 

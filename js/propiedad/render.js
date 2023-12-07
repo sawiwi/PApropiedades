@@ -139,14 +139,28 @@ export default async function renderCall(QueryParams = undefined, NumberPaginati
   //* Guardamos el data del response en una variable data 
   let data = response.data;
   // console.log('data: ', data)
+  let response2
+  let ufValue
+
+  try {
+    response2 = await ExchangeRateServices.getExchangeRateUF();
+    ufValue  = response2?.UFs[0]?.Valor;
+    
+  } catch (error) {
+    ufValue = '0'
+  }
 
   //* Cambio del Uf
-  const response2 = await ExchangeRateServices.getExchangeRateUF();
-  const ufValue = response2?.UFs[0]?.Valor;
   const ufValueAsNumber = parseFloat(ufValue.replace(",", "."));
 
   //! transformar valor del uf a int
-  const cleanedValue = ufValue.replace(/\./g, '').replace(',', '.');
+
+  let cleanedValue;
+  if(ufValue != null ){
+     cleanedValue = ufValue.replace(/\./g, '').replace(',', '.');
+  }else{
+    cleanedValue;
+  }
   const ufValueAsInt = parseFloat(cleanedValue).toFixed(0);
 
   //todo: Modificar url de image
@@ -224,8 +238,8 @@ export default async function renderCall(QueryParams = undefined, NumberPaginati
                             </div>
                             <div class="col-3 hr-l">
                                 <div class="row ">
-                                    <div class="col-12">UF</div>
-                                    <div class="col-12">${validationUF(data.currency.isoCode) ? data.price : clpToUf(data.price, ufValueAsNumber)}</div>
+                                    <div class="col-12">${ufValueAsNumber === 0 && data.currency.isoCode ==='CLP' ? 'CLP': 'UF'}</div>
+                                    <div class="col-12">${validationUF(data?.currency?.isoCode) ? data?.price : clpToUf(data?.price, ufValueAsNumber)}</div>
                                 </div>
                             </div>
                             <div class="col-4">
